@@ -4,6 +4,8 @@ import { AppComponent } from "./app.component";
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { MainComponent } from "./pages/main/main.component";
 import { TechnologyComponent } from './pages/technology/technology.component';
+import { TechnologyvikComponent } from './pages/technologyvik/technologyvik.component';
+import { TechnologyvikdataComponent } from './pages/technologyvikdata/technologyvikdata.component';
 
 const routes: Routes = [
   {
@@ -21,10 +23,16 @@ const routes: Routes = [
   {
     path: 'employee',
     component: EmployeeComponent
+  },
+  {
+    path: 'technologyvik',
+    component: TechnologyvikComponent
+  },
+  {
+    path: 'technologyvikdata',
+    component: TechnologyvikdataComponent
   }
-  
-];
-
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
