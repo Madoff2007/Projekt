@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./technology.component.scss']
 })
 export class TechnologyComponent {
+
   title = 'test-app';
-
   fio = '';
-
   test() {
+    console.log(77);
     localStorage.setItem('fio', this.fio);
   }
 

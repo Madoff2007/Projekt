@@ -7,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TechnologyvikComponent implements OnInit{
 
-  fio: string | null = '';
+  fio: string | null = null;
 
 
   ngOnInit() {
-    this.fio = localStorage.getItem('fio');
     console.log(98765434567);
+    this.fio = localStorage.getItem('fio');
   }
 }
