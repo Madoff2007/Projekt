@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-technology',
@@ -21,6 +22,6 @@ export class TechnologyComponent {
     localStorage.setItem('zakazchik', this.zakazchik);
     localStorage.setItem('tuopo', this.tuopo);
     localStorage.setItem('programa', this.programa);
-    localStorage.setItem('Sposob', this.Sposob);
+    localStorage.setItem('Sposob',this.Sposob);
   }
 }

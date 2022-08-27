@@ -16,17 +16,27 @@ export class TechnologyvikdataComponent implements OnInit {
   Normativnidokyment1: string | null = null;
   Normativnidokyment2: string | null = null;
   Normativnidokyment3: string | null = null;
+  datasvarki: string | null = null;
+  datakontrola: string | null = null;
+  kontrolprovel: string | null = null;
+  nomeprotokola: string | null = null;
+  //pynkti1: string | null = null;
   
   ngOnInit() {
     console.log(98765434567);
-    localStorage.getItem('fio');
-    localStorage.getItem('klemo');
-    localStorage.getItem('zakazchik');
-    localStorage.getItem('tuopo',);
-    localStorage.getItem('programa',);
-    localStorage.getItem('Sposob');
-    localStorage.getItem('Normativnidokyment1');
-    localStorage.getItem('Normativnidokyment2');
-    localStorage.getItem('Normativnidokyment3');
+    this.fio=localStorage.getItem('fio');
+    this.klemo=localStorage.getItem('klemo');
+    this.zakazchik=localStorage.getItem('zakazchik');
+    this.tuopo=localStorage.getItem('tuopo');
+    this.programa=localStorage.getItem('programa');
+    this.Sposob=localStorage.getItem('Sposob');
+    this.Normativnidokyment1=localStorage.getItem('Normativnidokyment1');
+    this.Normativnidokyment2=localStorage.getItem('Normativnidokyment2');
+    this.Normativnidokyment3=localStorage.getItem('Normativnidokyment3');
+    this.datasvarki=localStorage.getItem('datasvarki');
+    this.datakontrola=localStorage.getItem('datakontrola');
+    this.kontrolprovel=localStorage.getItem('kontrolprovel');
+    this.nomeprotokola=localStorage.getItem('nomeprotokola');
+    //this.pynkti1=localStorage.getItem('pynkti1');
 }
 }

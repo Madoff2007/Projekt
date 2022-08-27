@@ -3,38 +3,44 @@
 <p>Методикаконтроля:
     <select name="НормативныйДокумент"
                   [(ngModel)]="Normativnidokyment1" (ngModelChange)="test()">
-        <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
-        <option value="е2">РД 34.10.130-96</option>
-        <option value="е3">ГОСТ 23479-79</option>
+        <option value="СТО Газпром 2-2.4-083-2006">СТО Газпром 2-2.4-083-2006 </option>
+        <option value="РД 34.10.130-96">РД 34.10.130-96</option>
+        <option value="ГОСТ 23479-79">ГОСТ 23479-79</option>
+        <option value="-">-</option>
         </select>
 
     <select name="НормативныйДокумент2"
                   [(ngModel)]="Normativnidokyment2" (ngModelChange)="test()">
-    <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
-    <option value="е2">РД 34.10.130-96</option>
-    <option value="е3">ГОСТ 23479-79</option>
+    <option value="СТО Газпром 2-2.4-083-2006">СТО Газпром 2-2.4-083-2006 </option>
+    <option value="РД 34.10.130-96">РД 34.10.130-96</option>
+    <option value="ГОСТ 23479-79">ГОСТ 23479-79</option>
+    <option value="-">-</option>
     </select>
 
     <select name="НормативныйДокумент3"
                   [(ngModel)]="Normativnidokyment3" (ngModelChange)="test()">
-    <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
-    <option value="е2">РД 34.10.130-96</option>
-    <option value="е3">ГОСТ 23479-79</option>
+    <option value="СТО Газпром 2-2.4-083-2006">СТО Газпром 2-2.4-083-2006 </option>
+    <option value="РД 34.10.130-96">РД 34.10.130-96</option>
+    <option value="ГОСТ 23479-79">ГОСТ 23479-79</option>
+    <option value="-">-</option>
     </select>
 </p>
 <div>
     <div>
 
           <p>
-            Дата сварки: <input type="ДатаСварки" id="myText" placeholder="Дата Сварки">
-            Дата контроля: <input type="ДатаКонтроля" id="myText" placeholder="Дата Контроля">
+            Дата сварки: <input type="text" id="datasvarki" placeholder="Дата Сварки"
+                    [(ngModel)]="datasvarki" (ngModelChange)="test()">
+            Дата контроля: <input type="text" id="datakontrola" placeholder="Дата Контроля"
+                     [(ngModel)]="datakontrola" (ngModelChange)="test()">
           </p>
             <p>Контроль проивел:
-            <select name="КонтрольПроивел">
-            <option value="с1">Лозинский М. И.</option>
-            <option value="с2">Кадников Д. И.</option>
-            <option value="с3">Кислицкий С. И.</option>
-            <option value="с4">Федоров Д. П.</option>
+            <select name="КонтрольПроивел" 
+                      [(ngModel)]="kontrolprovel" (ngModelChange)="test()">
+            <option value="Лозинский М. И.">Лозинский М. И.</option>
+            <option value="Кадников Д. И.">Кадников Д. И.</option>
+            <option value="Кислицкий С. И.">Кислицкий С. И.</option>
+            <option value="Федоров Д. П.">Федоров Д. П.</option>
             </select>
             </p>
 
@@ -54,7 +60,9 @@
             <p></p> 
     <div>
 
-      <p># Протокола: <input type="Протокол" id="myText" placeholder="Протокол"></p>
+      <p># Протокола: <input type="text" id="nomeprotokola" placeholder="Протокол" 
+        [(ngModel)]="nomeprotokola" (ngModelChange)="test()">
+      </p>
 
 Идентификатор клеймо КСС: <input type="Идентификатор" id="myText" placeholder="Идентификатор">
 
