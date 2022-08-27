@@ -9,6 +9,7 @@ export class TechnologyvikComponent implements OnInit{
 
   fio: string | null = '';
 
+
   ngOnInit() {
     this.fio = localStorage.getItem('fio');
     console.log(98765434567);

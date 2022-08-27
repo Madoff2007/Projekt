@@ -11,7 +11,6 @@ export class TechnologyComponent {
   fio = '';
 
   test() {
-    // console.log(123, this.fio);
     localStorage.setItem('fio', this.fio);
   }
 
