@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class TechnologyComponent {
   title = 'test-app';
+
+  fio = '';
+
+  test() {
+    // console.log(123, this.fio);
+    localStorage.setItem('fio', this.fio);
+  }
+
 }

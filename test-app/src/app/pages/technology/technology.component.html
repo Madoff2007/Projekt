@@ -2,7 +2,7 @@
 
 
 <div class="max">
-    ФИО сварщика: <input type="ФИО" id="myText" placeholder="ФИО">
+    ФИО сварщика: <input type="text" id="myText1" placeholder="ФИО" [(ngModel)]="fio" (ngModelChange)="test()">
     Клеймо сварщика: <input type="Клеймо" id="myText" placeholder="Клеймо">
     <p>
         Заказчик: <input type="Программа" id="myText" placeholder="Заказчик">
@@ -20,9 +20,9 @@
                  <option value="f7">МПС</option>
                  <option value="f8">МПГ</option>
                  </select>
-            </p>  
-     <button onclick="document.location='/technologyvik'">ВИК</button> 
+            </p>
+     <button onclick="document.location='/technologyvik'">ВИК</button>
      <button onclick="document.location='/technologyyk'">УК</button>
      <button onclick="document.location='/technologyrk'">РК</button>
-     <button onclick="document.location='/technologypvk'">ПВК</button>                
+<!--     <button (click)="test()">ПВК</button>-->
 </div>

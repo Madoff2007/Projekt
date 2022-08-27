@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './pages/employee/employee.component';
 import { MainComponent } from './pages/main/main.component';
 import { TechnologyComponent } from './pages/technology/technology.component';
+import { FormsModule } from "@angular/forms";
+import { TechnologyvikdataComponent } from "./pages/technologyvikdata/technologyvikdata.component";
+import { TechnologyvikComponent } from "./pages/technologyvik/technologyvik.component";
 
 @NgModule({
   declarations: [
@@ -12,10 +15,13 @@ import { TechnologyComponent } from './pages/technology/technology.component';
     MainComponent,
     TechnologyComponent,
     EmployeeComponent,
+    TechnologyvikdataComponent,
+    TechnologyvikComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
