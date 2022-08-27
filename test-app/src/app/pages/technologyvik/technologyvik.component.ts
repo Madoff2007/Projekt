@@ -5,13 +5,16 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './technologyvik.component.html',
   styleUrls: ['./technologyvik.component.scss']
 })
-export class TechnologyvikComponent implements OnInit{
+export class TechnologyvikComponent {
 
-  fio: string | null = null;
-
-
-  ngOnInit() {
-    console.log(98765434567);
-    this.fio = localStorage.getItem('fio');
+  title = 'test-app';
+  Normativnidokyment1 = '';
+  Normativnidokyment2 = '';
+  Normativnidokyment3 ='';
+  test() {
+    console.log(77);
+    localStorage.setItem('Normativnidokyment1', this.Normativnidokyment1);
+    localStorage.setItem('Normativnidokyment2', this.Normativnidokyment2);
+    localStorage.setItem('Normativnidokyment3', this.Normativnidokyment3);
   }
 }

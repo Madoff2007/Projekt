@@ -1,24 +1,22 @@
 <button onclick="document.location='/technology'">Технология</button>
 
-<div style="font-size: 16px; color: green">
-  {{fio}}
-</div>
-
-<p># Протокола: <input type="Протокол" id="myText" placeholder="Протокол"></p>
 <p>Методикаконтроля:
-    <select name="НормативныйДокумент">
-        <option value="е1"id e1="e1">СТО Газпром 2-2.4-083-2006 </option>
+    <select name="НормативныйДокумент"
+                  [(ngModel)]="Normativnidokyment1" (ngModelChange)="test()">
+        <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
         <option value="е2">РД 34.10.130-96</option>
         <option value="е3">ГОСТ 23479-79</option>
         </select>
 
-    <select name="НормативныйДокумент">
+    <select name="НормативныйДокумент2"
+                  [(ngModel)]="Normativnidokyment2" (ngModelChange)="test()">
     <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
     <option value="е2">РД 34.10.130-96</option>
     <option value="е3">ГОСТ 23479-79</option>
     </select>
 
-    <select name="НормативныйДокумент">
+    <select name="НормативныйДокумент3"
+                  [(ngModel)]="Normativnidokyment3" (ngModelChange)="test()">
     <option value="е1">СТО Газпром 2-2.4-083-2006 </option>
     <option value="е2">РД 34.10.130-96</option>
     <option value="е3">ГОСТ 23479-79</option>
@@ -53,8 +51,11 @@
             </select>
             <button>Ввод</button>
             </div>
-            <p></p>
+            <p></p> 
     <div>
+
+      <p># Протокола: <input type="Протокол" id="myText" placeholder="Протокол"></p>
+
 Идентификатор клеймо КСС: <input type="Идентификатор" id="myText" placeholder="Идентификатор">
 
 </div>
@@ -102,10 +103,10 @@
     <div class="Идентификатор">
     <div>
     Идентификатор клеймо КСС: <input type="Идентификатор" id="myText" placeholder="Идентификатор">
-
+    
     </div>
-
-
+    
+    
     <div> Диаметр трубы/лист: <select name="Диаметр/лист">
        <optgroup label="Лист"></optgroup>
        <option value="d1">4</option>
@@ -127,7 +128,7 @@
        <option value="s4">10</option>
       </select>
     </div>
-
+    
     <div>
       Тип соединения: <select name="ТипСоединения">
        <option value="a1">Л+Л</option>
@@ -136,7 +137,7 @@
        <option value="a4">Т+Л</option>
       </select>
     </div>
-
+    
     <div>
       Марка основного метала: <select name="МаркаОсновногоМетала">
         <option value="r1">Сталь 20</option>

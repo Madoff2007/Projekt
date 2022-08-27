@@ -2,16 +2,24 @@
 
 
 <div class="max">
-    ФИО сварщика: <input type="text" id="myText1" placeholder="ФИО"
+    ФИО сварщика: <input type="text" id="fio" placeholder="ФИО"
                          [(ngModel)]="fio" (ngModelChange)="test()">
-    Клеймо сварщика: <input type="Клеймо" id="myText" placeholder="Клеймо">
+
+    Клеймо сварщика: <input type="text" id="klemo" placeholder="Клеймо"
+                         [(ngModel)]="klemo" (ngModelChange)="test()">
     <p>
-        Заказчик: <input type="Программа" id="myText" placeholder="Заказчик">
-        ТУ ОПО: <input type="Программа" id="myText" placeholder="ТУ ОПО">
+        Заказчик: <input type="text" id="zakazchik" placeholder="Заказчик"
+                         [(ngModel)]="zakazchik" (ngModelChange)="test()">
+
+        ТУ ОПО: <input type="text" id="tuopo" placeholder="ТУ ОПО"
+                         [(ngModel)]="tuopo" (ngModelChange)="test()">
     </p>
             <p>
-                 # Программы: <input type="Программа" id="myText" placeholder="Программа">
-                 Способ сварки: <select name="Способ сварки">
+                 # Программы: <input type="text" id="programa" placeholder="Программа"
+                         [(ngModel)]="programa" (ngModelChange)="test()">
+
+                 Способ сварки: <select name="Способ сварки"
+                         [(ngModel)]="Sposob" (ngModelChange)="test()">
                  <option value="f1">РД</option>
                  <option value="f2">РАД</option>
                  <option value="f3">МП+МПИ</option>
