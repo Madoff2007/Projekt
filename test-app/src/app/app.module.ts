@@ -8,6 +8,8 @@ import { TechnologyComponent } from './pages/technology/technology.component';
 import { FormsModule } from "@angular/forms";
 import { TechnologyvikdataComponent } from "./pages/technologyvikdata/technologyvikdata.component";
 import { TechnologyvikComponent } from "./pages/technologyvik/technologyvik.component";
+import { TechnologyykComponent } from "./pages/technologyyk/technologyyk.component";
+import { TechnologyykdataComponent } from "./pages/technologyykdata/technologyykdata.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TechnologyvikComponent } from "./pages/technologyvik/technologyvik.comp
     TechnologyComponent,
     EmployeeComponent,
     TechnologyvikdataComponent,
-    TechnologyvikComponent
+    TechnologyvikComponent,
+    TechnologyykComponent,
+    TechnologyykdataComponent,
   ],
   imports: [
     BrowserModule,

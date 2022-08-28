@@ -6,6 +6,8 @@ import { MainComponent } from "./pages/main/main.component";
 import { TechnologyComponent } from './pages/technology/technology.component';
 import { TechnologyvikComponent } from './pages/technologyvik/technologyvik.component';
 import { TechnologyvikdataComponent } from './pages/technologyvikdata/technologyvikdata.component';
+import { TechnologyykComponent } from './pages/technologyyk/technologyyk.component';
+import { TechnologyykdataComponent } from './pages/technologyykdata/technologyykdata.component';
 
 const routes: Routes = [
   {
@@ -31,7 +33,15 @@ const routes: Routes = [
   {
     path: 'technologyvikdata',
     component: TechnologyvikdataComponent
-  }
+  },
+  {
+    path: 'technologyyk',
+    component: TechnologyykComponent
+  },
+  {
+    path: 'technologyykdata',
+    component: TechnologyykdataComponent
+  },
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

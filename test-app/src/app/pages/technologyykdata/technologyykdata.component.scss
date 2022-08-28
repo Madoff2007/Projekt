@@ -1,0 +1,44 @@
+table {
+    border: 2px;
+    width: 500px;
+    border-collapse: collapse;
+    border-spacing: 10px 20px;
+}
+th {
+    border:  solid 1px;
+    font-size: 8px;
+    font-family: arial;
+    font-weight: bold;
+}
+.first{
+    font-size: 8px;
+    font-family: arial;
+    font-weight: bold;
+}
+.p{
+    border-spacing: 2px;
+}
+.table1{
+    border: #000000 solid 1px;
+    color: red;
+    font-size: 5px;
+    font-family: arial;
+    font-weight: normal
+}
+.table3{
+    border: none;
+}
+.table4{
+    border: none;
+    color:  red;
+    font-size: 5px;
+    font-family: arial;
+    font-weight: normal
+}
+.table5{
+    border: none;
+    color:  rgb(0, 0, 0);
+    font-size: 4px;
+    font-family: arial;
+    font-weight: bold
+}
