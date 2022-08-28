@@ -10,6 +10,8 @@ import { TechnologyvikdataComponent } from "./pages/technologyvikdata/technology
 import { TechnologyvikComponent } from "./pages/technologyvik/technologyvik.component";
 import { TechnologyykComponent } from "./pages/technologyyk/technologyyk.component";
 import { TechnologyykdataComponent } from "./pages/technologyykdata/technologyykdata.component";
+import { TechnologypkComponent } from "./pages/technologypk/technologypk.component";
+import { TechnologypkdataComponent } from "./pages/technologypkdata/technologypkdata.component";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { TechnologyykdataComponent } from "./pages/technologyykdata/technologyyk
     TechnologyvikComponent,
     TechnologyykComponent,
     TechnologyykdataComponent,
+    TechnologypkComponent,
+    TechnologypkdataComponent,
   ],
   imports: [
     BrowserModule,

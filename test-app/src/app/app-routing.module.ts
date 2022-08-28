@@ -8,6 +8,8 @@ import { TechnologyvikComponent } from './pages/technologyvik/technologyvik.comp
 import { TechnologyvikdataComponent } from './pages/technologyvikdata/technologyvikdata.component';
 import { TechnologyykComponent } from './pages/technologyyk/technologyyk.component';
 import { TechnologyykdataComponent } from './pages/technologyykdata/technologyykdata.component';
+import { TechnologypkComponent } from './pages/technologypk/technologypk.component';
+import { TechnologypkdataComponent } from './pages/technologypkdata/technologypkdata.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,14 @@ const routes: Routes = [
   {
     path: 'technologyykdata',
     component: TechnologyykdataComponent
+  },
+  {
+    path: 'technologypk',
+    component: TechnologypkComponent
+  },
+  {
+    path: 'technologypkdata',
+    component: TechnologypkdataComponent
   },
 ]
 @NgModule({
