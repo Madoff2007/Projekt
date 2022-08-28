@@ -7,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TechnologyvikdataComponent implements OnInit {
 
+  title = 'test-app';
+  
   fio: string | null = null;
   klemo: string | null = null;
   zakazchik: string | null = null;
