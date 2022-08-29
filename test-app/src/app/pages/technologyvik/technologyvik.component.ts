@@ -16,6 +16,8 @@ export class TechnologyvikComponent {
   datakontrola ='';
   kontrolprovel ='';
   nomeprotokola ='';
+  fio ='';
+  klemo ='';
   //pynkti1 ='';
   test() {
     console.log(77);
@@ -26,6 +28,8 @@ export class TechnologyvikComponent {
     localStorage.setItem('datakontrola', this.datakontrola);
     localStorage.setItem('kontrolprovel', this.kontrolprovel);
     localStorage.setItem('nomeprotokola', this.nomeprotokola);
+    localStorage.setItem('fio', this.fio);
+    localStorage.setItem('klemo', this.klemo);
     //localStorage.setItem('pynkti1', this.Normativnidokyment1) 
   }
 }

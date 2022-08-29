@@ -44,116 +44,22 @@
             </select>
             </p>
 
-            <div>
-              Количество идентивикаторов:
-            <select name="КоличествоИндетификаторов">
-            <option value="с1">1</option>
-            <option value="с2">2</option>
-            <option value="с3">3</option>
-            <option value="с4">3</option>
-            <option value="с2">4</option>
-            <option value="с3">5</option>
-            <option value="с4">6</option>
-            </select>
-            <button>Ввод</button>
-            </div>
             <p></p> 
     <div>
+      ФИО сварщика: <input type="text" id="fio" placeholder="ФИО"
+          [(ngModel)]="fio" (ngModelChange)="test()">
 
-      <p># Протокола: <input type="text" id="nomeprotokola" placeholder="Протокол" 
-        [(ngModel)]="nomeprotokola" (ngModelChange)="test()">
-      </p>
+      Клеймо сварщика: <input type="text" id="klemo" placeholder="Клеймо"
+          [(ngModel)]="klemo" (ngModelChange)="test()">
+    <div>
+
+<p></p>
 
 Идентификатор клеймо КСС: <input type="Идентификатор" id="myText" placeholder="Идентификатор">
-
+# Протокола: <input type="text" id="nomeprotokola" placeholder="Протокол" 
+        [(ngModel)]="nomeprotokola" (ngModelChange)="test()">
 </div>
 
-
-<div> Диаметр трубы/лист: <select name="Диаметр/лист">
-   <optgroup label="Лист"></optgroup>
-   <option value="d1">4</option>
-   <option value="d2">6</option>
-   <option value="d3">8</option>
-   <option value="d4">10</option>
-   <optgroup label="Труба"></optgroup>
-   <option value="d5">57</option>
-   <option value="d6">159</option>
-   <option value="d7">259</option>
-   <option value="d8">512</option>
-  </select>
-</div>
-<div>
-   Толщина трубы/лист: <select name="Толщина">
-   <option value="s1">4</option>
-   <option value="s2">6</option>
-   <option value="s3">8</option>
-   <option value="s4">10</option>
-  </select>
-</div>
-
-<div>
-  Тип соединения: <select name="ТипСоединения">
-   <option value="a1">Л+Л</option>
-   <option value="a2">Т+Т</option>
-   <option value="a3">Л+Т</option>
-   <option value="a4">Т+Л</option>
-  </select>
-</div>
-
-<div>
-  Марка основного метала: <select name="МаркаОсновногоМетала">
-    <option value="r1">Сталь 20</option>
-    <option value="r2">09Г2С</option>
-    <option value="r3">12Х18Н10Т</option>
-    <option value="r4">Стп3</option>
-   </select>
-</div>
-    <div class="Идентификатор">
-    <div>
-    Идентификатор клеймо КСС: <input type="Идентификатор" id="myText" placeholder="Идентификатор">
-    
-    </div>
-    
-    
-    <div> Диаметр трубы/лист: <select name="Диаметр/лист">
-       <optgroup label="Лист"></optgroup>
-       <option value="d1">4</option>
-       <option value="d2">6</option>
-       <option value="d3">8</option>
-       <option value="d4">10</option>
-       <optgroup label="Труба"></optgroup>
-       <option value="d5">57</option>
-       <option value="d6">159</option>
-       <option value="d7">259</option>
-       <option value="d8">512</option>
-      </select>
-    </div>
-    <div>
-       Толщина трубы/лист: <select name="Толщина">
-       <option value="s1">4</option>
-       <option value="s2">6</option>
-       <option value="s3">8</option>
-       <option value="s4">10</option>
-      </select>
-    </div>
-    
-    <div>
-      Тип соединения: <select name="ТипСоединения">
-       <option value="a1">Л+Л</option>
-       <option value="a2">Т+Т</option>
-       <option value="a3">Л+Т</option>
-       <option value="a4">Т+Л</option>
-      </select>
-    </div>
-    
-    <div>
-      Марка основного метала: <select name="МаркаОсновногоМетала">
-        <option value="r1">Сталь 20</option>
-        <option value="r2">09Г2С</option>
-        <option value="r3">12Х18Н10Т</option>
-        <option value="r4">Стп3</option>
-       </select>
-    </div>
     </div>
     <button onclick="document.location='/technologyvikdata'">Готово</button>
-</div>
+    </div>

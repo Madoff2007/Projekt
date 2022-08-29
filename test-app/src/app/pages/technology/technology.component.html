@@ -2,11 +2,6 @@
 
 
 <div class="max">
-    ФИО сварщика: <input type="text" id="fio" placeholder="ФИО"
-                         [(ngModel)]="fio" (ngModelChange)="test()">
-
-    Клеймо сварщика: <input type="text" id="klemo" placeholder="Клеймо"
-                         [(ngModel)]="klemo" (ngModelChange)="test()">
     <p>
         Заказчик: <input type="text" id="zakazchik" placeholder="Заказчик"
                          [(ngModel)]="zakazchik" (ngModelChange)="test()">
@@ -30,6 +25,90 @@
                  <option value="МПГ">МПГ</option>
                  </select>
             </p>
+
+            <div>
+                Количество идентивикаторов:
+              <select name="КоличествоИндетификаторов">
+              <option value="с1">1</option>
+              <option value="с2">2</option>
+              <option value="с3">3</option>
+              <option value="с4">3</option>
+              <option value="с2">4</option>
+              <option value="с3">5</option>
+              <option value="с4">6</option>
+              </select>
+              <button>Ввод</button>
+              </div>
+              <p></p>
+              <div>
+              <table>
+                
+                        <tr>
+                                <th>№ п/п</th>
+                                <th>Идентификатор, клеймо КСС</th>
+                                <th>Диаметр трубы/листа</th>
+                                <th>Толщина</th>
+                                <th>Вид, типоразмер свариваемых деталей</th>
+                                <th>Марка основного материала</th>
+                        </tr>
+                
+                        <tr>
+                                <th> <input type="text" id="p/p" placeholder="№ п/п"></th> 
+                                <th><input type="text" id="identifikator" placeholder="Идентификатор"></th>   
+                                <th><select name="Диаметр/лист">
+                                        <optgroup label="Лист"></optgroup>
+                                        <option value="d1">4</option>
+                                        <option value="d2">6</option>
+                                        <option value="d3">8</option>
+                                        <option value="d4">10</option>
+                                        <optgroup label="Труба"></optgroup>
+                                        <option value="d5">57</option>
+                                        <option value="d6">159</option>
+                                        <option value="d7">259</option>
+                                        <option value="d8">512</option>
+                                        </select></th>
+                                <th><select name="Толщина">
+                                        <option value="s1">4</option>
+                                        <option value="s2">6</option>
+                                        <option value="s3">8</option>
+                                        <option value="s4">10</option>
+                                        </select></th> 
+                                <th><select name="ТипСоединения">
+                                         <option value="a1">Л+Л</option>
+                                         <option value="a2">Т+Т</option>
+                                         <option value="a3">Л+Т</option>
+                                         <option value="a4">Т+Л</option>
+                                         </select></th> 
+                                <th><select name="МаркаОсновногоМетала">
+                                         <option value="a1">09Г2С</option>
+                                         <option value="a2">12Х18Н10Т</option>
+                                         <option value="a3">Стп3</option>
+                                         <option value="a4">Сталь20</option>
+                                         </select></th>
+                                <div class="checkbox">
+                                <input type="checkbox">ВИК
+                                <input type="checkbox">УК 
+                                <input type="checkbox">РК 
+                                <input type="checkbox">МК
+                                <input type="checkbox">ПВК 
+                                <input type="checkbox">Растяжение
+                                <input type="checkbox">Изгиб
+                                <input type="checkbox">Сплющивание
+                                <input type="checkbox">Удар
+                                <input type="checkbox">Твердость
+                                <input type="checkbox">Макрошлиф
+                                </div>
+                        </tr>
+                        
+                 </table>
+                
+                </div> 
+                
+                
+              <p></p> 
+
+
+
      <button onclick="document.location='/technologyvik'">ВИК</button>
      <button onclick="document.location='/technologyyk'">УК</button>
      <button onclick="document.location='/technologypk'">РК</button>
@@ -45,3 +124,6 @@
      </div>
 <!--     <button (click)="test()">ПВК</button>-->
 </div>
+
+<p></p>
+
