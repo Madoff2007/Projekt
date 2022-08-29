@@ -26,16 +26,23 @@
                  </select>
             </p>
 
+            <p>Дата сварки: <input type="text" id="datasvarki" placeholder="Дата Сварки"
+                    [(ngModel)]="datasvarki" (ngModelChange)="test()">
+            </p>
+
             <div>
-                Количество идентивикаторов:
+                Количество идентификаторов:
               <select name="КоличествоИндетификаторов">
-              <option value="с1">1</option>
-              <option value="с2">2</option>
-              <option value="с3">3</option>
-              <option value="с4">3</option>
-              <option value="с2">4</option>
-              <option value="с3">5</option>
-              <option value="с4">6</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
               </select>
               <button>Ввод</button>
               </div>
@@ -54,37 +61,44 @@
                         </tr>
                 
                         <tr>
-                                <th> <input type="text"class="class1" id="p/p" placeholder="№ п/п"></th> 
-                                <th><input type="text"class="class1" id="identifikator" placeholder="Идентификатор"></th>   
-                                <th><select name="Диаметр/лист">
+                                <th></th> 
+                                <th><input type="text"class="class1" id="identifikator" placeholder="Идентификатор"
+                                        [(ngModel)]="identifikator" (ngModelChange)="test()"></th>   
+                                <th><select name="Диаметр/лист"
+                                        [(ngModel)]="diametrlist" (ngModelChange)="test()">
                                         <optgroup label="Лист"></optgroup>
-                                        <option value="d1">4</option>
-                                        <option value="d2">6</option>
-                                        <option value="d3">8</option>
-                                        <option value="d4">10</option>
+                                        <option value="4,0 мм x &nbsp;">4,0 мм</option>
+                                        <option value="6,0 мм x &nbsp;">6,0 мм</option>
+                                        <option value="8,0 мм x &nbsp;">8,0 мм</option>
+                                        <option value="10,0 мм x &nbsp;">10,0 мм</option>
                                         <optgroup label="Труба"></optgroup>
-                                        <option value="d5">57</option>
-                                        <option value="d6">159</option>
-                                        <option value="d7">259</option>
-                                        <option value="d8">512</option>
+                                        <option value="&Oslash; 57,0 мм x &nbsp;">&Oslash; 57,0 мм</option>
+                                        <option value="&Oslash; 159,0 мм х &nbsp;">&Oslash; 159,0 мм</option>
+                                        <option value="&Oslash; 256,0 мм х &nbsp;">&Oslash; 256,0 мм</option>
+                                        <option value="&Oslash; 512,0 мм х &nbsp;">&Oslash; 512,0 мм</option>
                                         </select></th>
-                                <th><select name="Толщина">
-                                        <option value="s1">4</option>
-                                        <option value="s2">6</option>
-                                        <option value="s3">8</option>
-                                        <option value="s4">10</option>
+                                <th><select name="Толщина" 
+                                        [(ngModel)]="tolshina" (ngModelChange)="test()">
+                                        <option value="4,0 мм">4,0 мм</option>
+                                        <option value="6,0 мм">6,0 мм</option>
+                                        <option value="8,0 мм">8,0 мм</option>
+                                        <option value="10,0 мм">10,0 мм</option>
                                         </select></th> 
-                                <th><select name="ТипСоединения">
-                                         <option value="a1">Л+Л</option>
-                                         <option value="a2">Т+Т</option>
-                                         <option value="a3">Л+Т</option>
-                                         <option value="a4">Т+Л</option>
+                                <th><select name="ТипСоединения" [(ngModel)]="tipsoedinenia" (ngModelChange)="test()">
+                                         <option value="Л+Л,&nbsp;">Л+Л</option>
+                                         <option value="Л+Л,&nbsp;СШ,&nbsp;">Л+Л,СШ</option>
+                                         <option value="Т+Т,&nbsp;">Т+Т</option>
+                                         <option value="Т+Т,&nbsp;УШ,&nbsp;">Т+Т,УШ</option>
+                                         <option value="Т+Т,&nbsp;Н,&nbsp;">Т+Т,Н</option>
+                                         <option value="Т+Л,&nbsp;">Л+Т</option>
+                                         <option value="Т+Л,&nbsp;">Т+Л</option>
                                          </select></th> 
-                                <th><select name="МаркаОсновногоМетала">
-                                         <option value="a1">09Г2С</option>
-                                         <option value="a2">12Х18Н10Т</option>
-                                         <option value="a3">Стп3</option>
-                                         <option value="a4">Сталь20</option>
+                                <th><select name="МаркаОсновногоМетала"
+                                        [(ngModel)]="markaosnovnogometala" (ngModelChange)="test()">
+                                         <option value="09Г2С">09Г2С</option>
+                                         <option value="12Х18Н10Т">12Х18Н10Т</option>
+                                         <option value="Стп3">Стп3</option>
+                                         <option value="Сталь20">Сталь20</option>
                                          </select></th>
                                 <div class="checkbox">
                                 <input type="checkbox">ВИК

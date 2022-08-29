@@ -22,7 +22,11 @@ export class TechnologyvikdataComponent implements OnInit {
   datakontrola: string | null = null;
   kontrolprovel: string | null = null;
   nomeprotokola: string | null = null;
-  //pynkti1: string | null = null;
+  identifikator: string | null = null;
+  markaosnovnogometala: string | null = null;
+  diametrlist: string | null = null;
+  tolshina: string | null = null;
+  tipsoedinenia: string | null = null;
   
   ngOnInit() {
     console.log(98765434567);
@@ -39,6 +43,10 @@ export class TechnologyvikdataComponent implements OnInit {
     this.datakontrola=localStorage.getItem('datakontrola');
     this.kontrolprovel=localStorage.getItem('kontrolprovel');
     this.nomeprotokola=localStorage.getItem('nomeprotokola');
-    //this.pynkti1=localStorage.getItem('pynkti1');
+    this.identifikator=localStorage.getItem('identifikator');
+    this.markaosnovnogometala=localStorage.getItem('markaosnovnogometala');
+    this.diametrlist=localStorage.getItem('diametrlist');
+    this.tolshina=localStorage.getItem('tolshina');
+    this.tipsoedinenia=localStorage.getItem('tipsoedinenia');
 }
 }

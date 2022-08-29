@@ -15,6 +15,12 @@ export class TechnologyComponent {
   tuopo ='';
   programa ='';
   Sposob ='';
+  datasvarki ='';
+  identifikator ='';
+  markaosnovnogometala ='';
+  diametrlist ='';
+  tolshina ='';
+  tipsoedinenia ='';
 
   test() {
     console.log(77);
@@ -22,5 +28,11 @@ export class TechnologyComponent {
     localStorage.setItem('tuopo', this.tuopo);
     localStorage.setItem('programa', this.programa);
     localStorage.setItem('Sposob',this.Sposob);
+    localStorage.setItem('datasvarki',this.datasvarki);
+    localStorage.setItem('identifikator',this.identifikator);
+    localStorage.setItem('markaosnovnogometala',this.markaosnovnogometala);
+    localStorage.setItem('diametrlist',this.diametrlist);
+    localStorage.setItem('tolshina',this.tolshina);
+    localStorage.setItem('tipsoedinenia',this.tipsoedinenia);
   }
 }
