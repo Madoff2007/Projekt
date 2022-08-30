@@ -26,11 +26,6 @@
 </p>
 <div>
     <div>
-
-          <p>
-            Дата контроля: <input type="text" id="datakontrola" placeholder="Дата Контроля"
-                     [(ngModel)]="datakontrola" (ngModelChange)="test()">
-          </p>
             <p>Контроль провел:
             <select name="КонтрольПроивел" 
                       [(ngModel)]="kontrolprovel" (ngModelChange)="test()">
@@ -57,38 +52,56 @@
               <table>
                      <tr>
                         <th>№ Протокола</th>
+                        <th>Дата контроля</th>
                         <th>ФИО</th>
                         <th>Клеймо</th>
                         <th>Идентификатор</th>
-                        <th>Количество идентификаторов
-                            <select name="Количество идентификаторов">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">4</option>
-                            <option value="5">5</option>
-                            </select>
-                            <button>Ввод</button></th>
+                        
                      </tr>
         
                      <tr>
                         <th><input type="text" class="class2" id="nomeprotokola" placeholder="Протокол" 
                             [(ngModel)]="nomeprotokola" (ngModelChange)="test()"></th> 
+                        <input type="text" class="class2" id="datakontrola" placeholder="Дата Контроля"
+                            [(ngModel)]="datakontrola" (ngModelChange)="test()">   
                         <th><input type="text"class="class2" id="fio" placeholder="ФИО"
                             [(ngModel)]="fio" (ngModelChange)="test()"></th>   
                         <th><input type="text"class="class2" id="klemo" placeholder="Клеймо"
                             [(ngModel)]="klemo" (ngModelChange)="test()"></th>
-                        <th><input type="text"class="class2" id="nomeprotokola" placeholder="Протокол"></th> 
-                        
+                        <th><input type="text"class="class2" id="nomeprotokola" placeholder="Идентификатор"></th> 
+                        <th>Количество идентификаторов
+                            <select name="Количество идентификаторов">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            </select>
+                            <button>Ввод</button></th>
                      </tr>
                 
                 </table>
-
-
-
-
-
-
-
 
     <div>
 
