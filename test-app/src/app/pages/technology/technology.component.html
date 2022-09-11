@@ -26,13 +26,14 @@
                  </select>
             </p>
 
-            <p>Дата сварки: <input type="text" id="datasvarki" placeholder="Дата Сварки"
+            <p>Дата сварки: <input type="date" id="datasvarki" placeholder="Дата Сварки"
                     [(ngModel)]="datasvarki" (ngModelChange)="test()">
             </p>
 
             <div>
                 Количество идентификаторов:
-              <select name="КоличествоИндетификаторов">
+              <select name="kolichestvoindentifikatorov"id="kolichestvoindentifikatorov"
+                 [(ngModel)]="kolichestvoindentifikatorov" (ngModelChange)="test2()">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -60,8 +61,9 @@
                 <option value="25">25</option>
                 <option value="26">26</option>
               </select>
-              <button>Ввод</button>
               </div>
+
+
               <p></p>
               
                  <div>
@@ -76,12 +78,12 @@
                                 <th>Марка основного материала</th>
                         </tr>
                 
-                        <tr>
-                                <th></th> 
+                        <tr *ngFor ="let item of items; let i = index">
+                                <th>{{i+1}}</th> 
                                 <th><input type="text"class="class1" id="identifikator" placeholder="Идентификатор"
-                                        [(ngModel)]="identifikator" (ngModelChange)="test()"></th>   
+                                        [(ngModel)]="identifikator[i]" (ngModelChange)="test()"></th>   
                                 <th><select name="Диаметр/лист"
-                                        [(ngModel)]="diametrlist" (ngModelChange)="test()">
+                                        [(ngModel)]="diametrlist[i]" (ngModelChange)="test()">
                                         <optgroup label="Лист"></optgroup>
                                         <option value="4,0 мм x &nbsp;">4,0 мм</option>
                                         <option value="6,0 мм x &nbsp;">6,0 мм</option>
@@ -94,13 +96,13 @@
                                         <option value="&Oslash; 512,0 мм х &nbsp;">&Oslash; 512,0 мм</option>
                                         </select></th>
                                 <th><select name="Толщина" 
-                                        [(ngModel)]="tolshina" (ngModelChange)="test()">
+                                        [(ngModel)]="tolshina[i]" (ngModelChange)="test()">
                                         <option value="4,0 мм">4,0 мм</option>
                                         <option value="6,0 мм">6,0 мм</option>
                                         <option value="8,0 мм">8,0 мм</option>
                                         <option value="10,0 мм">10,0 мм</option>
                                         </select></th> 
-                                <th><select name="ТипСоединения" [(ngModel)]="tipsoedinenia" (ngModelChange)="test()">
+                                <th><select name="ТипСоединения" [(ngModel)]="tipsoedinenia[i]" (ngModelChange)="test()">
                                          <option value="Л+Л,&nbsp;">Л+Л</option>
                                          <option value="Л+Л,&nbsp;СШ,&nbsp;">Л+Л,СШ</option>
                                          <option value="Т+Т,&nbsp;">Т+Т</option>
@@ -110,7 +112,7 @@
                                          <option value="Т+Л,&nbsp;">Т+Л</option>
                                          </select></th> 
                                 <th><select name="МаркаОсновногоМетала"
-                                        [(ngModel)]="markaosnovnogometala" (ngModelChange)="test()">
+                                        [(ngModel)]="markaosnovnogometala[i]" (ngModelChange)="test()">
                                          <option value="09Г2С">09Г2С</option>
                                          <option value="12Х18Н10Т">12Х18Н10Т</option>
                                          <option value="Стп3">Стп3</option>
@@ -153,6 +155,4 @@
      </div>
 <!--     <button (click)="test()">ПВК</button>-->
 </div>
-
-<p></p>
 

@@ -1,5 +1,5 @@
-import { TemplateBindingParseResult } from '@angular/compiler';
-import { Component } from '@angular/core';
+import { BuiltinTypeName, TemplateBindingParseResult } from '@angular/compiler';
+import { Component, OnInit } from '@angular/core';
 import { __values } from 'tslib';
 
 @Component({
@@ -8,7 +8,7 @@ import { __values } from 'tslib';
   styleUrls: ['./technology.component.scss']
   
 })
-export class TechnologyComponent {
+export class TechnologyComponent implements OnInit{
 
   title = 'test-app';
   zakazchik ='';
@@ -16,11 +16,20 @@ export class TechnologyComponent {
   programa ='';
   Sposob ='';
   datasvarki ='';
-  identifikator ='';
-  markaosnovnogometala ='';
-  diametrlist ='';
-  tolshina ='';
-  tipsoedinenia ='';
+  identifikator: string[]=[];
+  markaosnovnogometala: string[]=[];
+  diametrlist: string[]=[];
+  tolshina: string[]=[];
+  tipsoedinenia: string[]=[];
+  kolichestvoindentifikatorov ='';
+  items: number[]=[];
+
+
+  ngOnInit(){
+    this.test2();
+  
+  }
+
 
   test() {
     console.log(77);
@@ -29,10 +38,20 @@ export class TechnologyComponent {
     localStorage.setItem('programa', this.programa);
     localStorage.setItem('Sposob',this.Sposob);
     localStorage.setItem('datasvarki',this.datasvarki);
-    localStorage.setItem('identifikator',this.identifikator);
-    localStorage.setItem('markaosnovnogometala',this.markaosnovnogometala);
-    localStorage.setItem('diametrlist',this.diametrlist);
-    localStorage.setItem('tolshina',this.tolshina);
-    localStorage.setItem('tipsoedinenia',this.tipsoedinenia);
+    //localStorage.setItem('identifikator',this.identifikator);
+   // localStorage.setItem('markaosnovnogometala',this.markaosnovnogometala);
+    //localStorage.setItem('diametrlist',this.diametrlist);
+    //localStorage.setItem('tolshina',this.tolshina);
+    //localStorage.setItem('tipsoedinenia',this.tipsoedinenia);
+  }
+
+  test2(){ 
+    this.items= [];
+    let a = this.kolichestvoindentifikatorov;
+    let i;
+    for (i=0; i<+a; ++i){
+      this.items.push(i);
+    }
+
   }
 }

@@ -1,6 +1,6 @@
 
 <p>Методикаконтроля:
-    <select name="НормативныйДокумент"
+    <select name="НормативныйДокумент1"
                   [(ngModel)]="Normativnidokyment1" (ngModelChange)="test()">
         <option value="СТО Газпром 2-2.4-083-2006">СТО Газпром 2-2.4-083-2006 </option>
         <option value="РД 34.10.130-96">РД 34.10.130-96</option>
@@ -23,6 +23,7 @@
     <option value="ГОСТ 23479-79">ГОСТ 23479-79</option>
     <option value="-">-</option>
     </select>
+
 </p>
 <div>
     <div>
@@ -40,15 +41,16 @@
             
             <div>
                 Количество Протоколов:
-              <select name="КоличествоПротоколов">
+                <select name="kolichestvoprotokolov"id="kolichestvoprotokolov"
+                [(ngModel)]="kolichestvoprotokolov" (ngModelChange)="test3()">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
+              <option value="5">5</option>
               </select>
-              <button>Ввод</button>
               </div>
-
+              
               <table>
                      <tr>
                         <th>№ Протокола</th>
@@ -59,18 +61,28 @@
                         
                      </tr>
         
-                     <tr>
+                     <tr *ngFor ="let item of items; let i = index">
                         <th><input type="text" class="class2" id="nomeprotokola" placeholder="Протокол" 
-                            [(ngModel)]="nomeprotokola" (ngModelChange)="test()"></th> 
-                        <input type="text" class="class2" id="datakontrola" placeholder="Дата Контроля"
-                            [(ngModel)]="datakontrola" (ngModelChange)="test()">   
-                        <th><input type="text"class="class2" id="fio" placeholder="ФИО"
-                            [(ngModel)]="fio" (ngModelChange)="test()"></th>   
-                        <th><input type="text"class="class2" id="klemo" placeholder="Клеймо"
-                            [(ngModel)]="klemo" (ngModelChange)="test()"></th>
-                        <th><input type="text"class="class2" id="nomeprotokola" placeholder="Идентификатор"></th> 
-                        <th>Количество идентификаторов
-                            <select name="Количество идентификаторов">
+                            [(ngModel)]="nomeprotokola[i]" (ngModelChange)="test()"></th> 
+                        
+                            <input type="text" class="class2" id="datakontrola" placeholder="Дата Контроля"
+                            [(ngModel)]="datakontrola[i]" (ngModelChange)="test()">   
+                        
+                            <th><input type="text"class="class2" id="fio" placeholder="ФИО"
+                            [(ngModel)]="fio[i]" (ngModelChange)="test()"></th>   
+                        
+                            <th><input type="text"class="class2" id="klemo" placeholder="Клеймо"
+                            [(ngModel)]="klemo[i]" (ngModelChange)="test()"></th>
+                        
+                            <th><select name="kolichestvoindentifikatorov"
+                                [(ngModel)]="nomerindentifikatora[i]" (ngModelChange)="test4()"
+                                *ngFor ="let item2 of items2; let i = index">
+                                <option>{{items2}}</option>
+                            </select></th> 
+
+                            <th>Количество идентификаторов
+                            <select name="kolichestvoindentifikatorov"
+                            [(ngModel)]="kolichestvoindentifikatorov[i]" (ngModelChange)="test4()">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -98,7 +110,7 @@
                             <option value="25">25</option>
                             <option value="26">26</option>
                             </select>
-                            <button>Ввод</button></th>
+                        </th>
                      </tr>
                 
                 </table>
