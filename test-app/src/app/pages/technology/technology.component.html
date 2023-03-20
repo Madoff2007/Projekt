@@ -72,6 +72,7 @@
                         <tr>
                                 <th>№ п/п</th>
                                 <th>Идентификатор, клеймо КСС</th>
+                                <th>Протокол</th>
                                 <th>Диаметр трубы/листа</th>
                                 <th>Толщина</th>
                                 <th>Вид, типоразмер свариваемых деталей</th>
@@ -81,7 +82,11 @@
                         <tr *ngFor ="let item of items; let i = index">
                                 <th>{{i+1}}</th> 
                                 <th><input type="text"class="class1" id="identifikator" placeholder="Идентификатор"
-                                        [(ngModel)]="identifikator[i]" (ngModelChange)="test()"></th>   
+                                        [(ngModel)]="identifikator[i]" (ngModelChange)="test()"></th> 
+
+                                 <th><input type="text"class="class1" id="Protokol" placeholder="Протокол"
+                                        [(ngModel)]="Protokol" (ngModelChange)="test()"></th>
+
                                 <th><select name="Диаметр/лист"
                                         [(ngModel)]="diametrlist[i]" (ngModelChange)="test()">
                                         <optgroup label="Лист"></optgroup>

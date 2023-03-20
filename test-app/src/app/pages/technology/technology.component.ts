@@ -16,6 +16,7 @@ export class TechnologyComponent implements OnInit{
   programa ='';
   Sposob ='';
   datasvarki ='';
+  Protokol ='';
   identifikator: string[]=[];
   markaosnovnogometala: string[]=[];
   diametrlist: string[]=[];
@@ -38,6 +39,7 @@ export class TechnologyComponent implements OnInit{
     localStorage.setItem('programa', this.programa);
     localStorage.setItem('Sposob',this.Sposob);
     localStorage.setItem('datasvarki',this.datasvarki);
+    localStorage.setItem('Protokol', this.Protokol);
     //localStorage.setItem('identifikator',this.identifikator);
    // localStorage.setItem('markaosnovnogometala',this.markaosnovnogometala);
     //localStorage.setItem('diametrlist',this.diametrlist);

@@ -14,7 +14,7 @@ import { TechnologypkdataComponent } from './pages/technologypkdata/technologypk
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: MainComponent
   },
   {
     path: 'main',
