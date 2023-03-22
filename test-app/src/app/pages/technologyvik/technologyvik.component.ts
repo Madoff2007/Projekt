@@ -23,6 +23,7 @@ export class TechnologyvikComponent implements OnInit{
   items: number[]=[];
   items2: number[]=[];
   nomerindentifikatora: string[]=[];
+  identifikator: number[]=[];
   
   
   ngOnInit(){

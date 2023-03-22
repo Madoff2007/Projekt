@@ -18,12 +18,17 @@ export class TechnologyComponent implements OnInit{
   datasvarki ='';
   Protokol ='';
   identifikator: string[]=[];
+  kolichestvoProtokolov: string[]=[];
   markaosnovnogometala: string[]=[];
   diametrlist: string[]=[];
   tolshina: string[]=[];
   tipsoedinenia: string[]=[];
   kolichestvoindentifikatorov ='';
   items: number[]=[];
+  datakontrola: number[]=[];
+  fio: number[]=[];
+  klemo: number[]=[];
+  
 
 
   ngOnInit(){
@@ -55,5 +60,14 @@ export class TechnologyComponent implements OnInit{
       this.items.push(i);
     }
 
+  }
+
+  test3(){ 
+    this.items= [];
+    let a = this.kolichestvoProtokolov;
+    let i;
+    for (i=0; i<+a; ++i){
+      this.items.push(i);
+    }
   }
 }

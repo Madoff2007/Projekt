@@ -26,10 +26,6 @@
                  </select>
             </p>
 
-            <p>Дата сварки: <input type="date" id="datasvarki" placeholder="Дата Сварки"
-                    [(ngModel)]="datasvarki" (ngModelChange)="test()">
-            </p>
-
             <div>
                 Количество идентификаторов:
               <select name="kolichestvoindentifikatorov"id="kolichestvoindentifikatorov"
@@ -71,21 +67,22 @@
                          <table>
                         <tr>
                                 <th>№ п/п</th>
-                                <th>Идентификатор, клеймо КСС</th>
-                                <th>Протокол</th>
+                                <th>Идентификатор, клейма КСС</th>
                                 <th>Диаметр трубы/листа</th>
                                 <th>Толщина</th>
                                 <th>Вид, типоразмер свариваемых деталей</th>
                                 <th>Марка основного материала</th>
+                                <th>Дата контроля</th>
+                                <th>Дата сварки</th>
+                                <th>ФИО</th>
+                                <th>Клеймо</th>
                         </tr>
                 
                         <tr *ngFor ="let item of items; let i = index">
                                 <th>{{i+1}}</th> 
+
                                 <th><input type="text"class="class1" id="identifikator" placeholder="Идентификатор"
                                         [(ngModel)]="identifikator[i]" (ngModelChange)="test()"></th> 
-
-                                 <th><input type="text"class="class1" id="Protokol" placeholder="Протокол"
-                                        [(ngModel)]="Protokol" (ngModelChange)="test()"></th>
 
                                 <th><select name="Диаметр/лист"
                                         [(ngModel)]="diametrlist[i]" (ngModelChange)="test()">
@@ -101,13 +98,15 @@
                                         <option value="&Oslash; 512,0 мм х &nbsp;">&Oslash; 512,0 мм</option>
                                         </select></th>
                                 <th><select name="Толщина" 
-                                        [(ngModel)]="tolshina[i]" (ngModelChange)="test()">
+                                        [(ngModel)]="tolshina[i]" 
+                                        (ngModelChange)="test()">
                                         <option value="4,0 мм">4,0 мм</option>
                                         <option value="6,0 мм">6,0 мм</option>
                                         <option value="8,0 мм">8,0 мм</option>
                                         <option value="10,0 мм">10,0 мм</option>
                                         </select></th> 
-                                <th><select name="ТипСоединения" [(ngModel)]="tipsoedinenia[i]" (ngModelChange)="test()">
+                                <th><select name="ТипСоединения" 
+                                        [(ngModel)]="tipsoedinenia[i]" (ngModelChange)="test()">
                                          <option value="Л+Л,&nbsp;">Л+Л</option>
                                          <option value="Л+Л,&nbsp;СШ,&nbsp;">Л+Л,СШ</option>
                                          <option value="Т+Т,&nbsp;">Т+Т</option>
@@ -123,6 +122,19 @@
                                          <option value="Стп3">Стп3</option>
                                          <option value="Сталь20">Сталь20</option>
                                          </select></th>
+
+                                <th><input type="text" class="class1" id="datakontrola" placeholder="Дата Контроля"
+                                        [(ngModel)]="datakontrola[i]" (ngModelChange)="test()"></th> 
+
+                                <th><input type="text" class="class1" id="datasvarki" placeholder="Дата Сварки"
+                                        [(ngModel)]="datasvarki" (ngModelChange)="test()"></th>  
+                                     
+                                <th><input type="text"class="class1" id="fio" placeholder="ФИО"
+                                        [(ngModel)]="fio[i]" (ngModelChange)="test()"></th>   
+                                     
+                                <th><input type="text"class="class1" id="klemo" placeholder="Клеймо"
+                                        [(ngModel)]="klemo[i]" (ngModelChange)="test()"></th>
+
                                 <div class="checkbox">
                                 <input type="checkbox">ВИК
                                 <input type="checkbox">УК 

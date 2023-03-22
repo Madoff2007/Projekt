@@ -73,16 +73,18 @@
                         
                             <th><input type="text"class="class2" id="klemo" placeholder="Клеймо"
                             [(ngModel)]="klemo[i]" (ngModelChange)="test()"></th>
-                        
-                            <th><select name="kolichestvoindentifikatorov"
-                                [(ngModel)]="nomerindentifikatora[i]" (ngModelChange)="test4()"
+
+
+                                                    
+                            <th><select name="identifikator" type="text"
+                                [(ngModel)]="identifikator" (ngModelChange)="test4()"
                                 *ngFor ="let item2 of items2; let i = index">
                                 <option>{{items2}}</option>
                             </select></th> 
 
                             <th>Количество идентификаторов
                             <select name="kolichestvoindentifikatorov"
-                            [(ngModel)]="kolichestvoindentifikatorov[i]" (ngModelChange)="test4()">
+                            [(ngModel)]="kolichestvoindentifikatorov" (ngModelChange)="test4()">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
